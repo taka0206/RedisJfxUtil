@@ -1,25 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?language javascript?>
 
 <BorderPane prefHeight="150.0" prefWidth="300.0"
+	fx:controller="jp.co.softbank.RedisJfxUtil.WindowController"
 	xmlns="http://javafx.com/javafx/8"
 	xmlns:fx="http://javafx.com/fxml/1">
-	<fx:script>
-		function buttonAction(e) {
-			var str = text1.getText();
-			label1.setText('you typed: "' + str + '"!');
-		}
-	</fx:script>
 	<top>
-		<Label fx:id="label1" text="this is FXML sample!" BorderPane.alignment="CENTER" />
+		<Label 
+			fx:id="label1" 
+			text="this is FXML sample!" 
+			BorderPane.alignment="TOP_LEFT">
+			<font>
+				<Font 
+					name="System Bold" 
+					size="18.0" />
+			</font>
+			<BorderPane.margin>
+				<Insets 
+					bottom="5.0"
+					left="5.0"
+					right="5.0"
+					top="5.0" />
+			</BorderPane.margin>
+		</Label>
 	</top>
 	<center>
-		<TextField fx:id="text1" BorderPane.alignment="CENTER" />
+		<TextField 
+			fx:id="text1" 
+			BorderPane.alignment="CENTER" />
 	</center>
 	<bottom>
-		<Button fx:id="btn1" onAction="buttonAction(event);" text="Click" BorderPane.alignment="CENTER" />
+		<Button 
+			fx:id="btn1" 
+				onAction="#buttonAction" 
+				text="Click" 
+				prefWidth="150"
+				prefHeight="40"
+				BorderPane.alignment="CENTER" />
 	</bottom>
 </BorderPane>
