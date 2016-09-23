@@ -11,6 +11,11 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
+/**
+ * RedisUtilMain
+ * @author taka__000
+ *
+ */
 public class RedisJfxUtil extends Application {
 
 	@Override
