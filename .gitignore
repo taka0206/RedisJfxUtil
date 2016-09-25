@@ -1,4 +1,12 @@
 .settings
-target
+target/archive-tmp
+target/classes
+target/generated-sources
+target/generated-test-sources
+target/maven-archiver
+target/maven-status
+target/surefire-reports
+target/test-classes
+target/RedisJfxUtil-0.0.1-SNAPSHOT.jar
 .classpath
 .project
