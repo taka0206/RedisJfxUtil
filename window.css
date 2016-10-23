@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+Label#label1{
+	-fx-font-size: 18pt;
+	-fx-font-family: Serif Bold;
+}
+
+TextField#text1{
+	
+}

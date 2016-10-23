@@ -13,9 +13,44 @@ public class WindowController {
 	@FXML
 	private TextField text1;
 	
+	
 	@FXML
-	protected void buttonAction(ActionEvent event) {
-		String str = text1.getText();
-		label1.setText("Hello, " + str + "!!");
+	private TextField redisUri;
+	
+	@FXML
+	private TextField auth;
+	
+	@FXML
+	private TextField key;
+	
+	@FXML
+	private TextField hashField;
+	
+	@FXML
+	private TextField hashValue;
+	
+	@FXML
+	protected void getKeyAllAction(ActionEvent event) {
+		System.out.println("keyAllGet呼ばれた");
+	}
+	
+	@FXML
+	protected void getAction(ActionEvent event) {
+		System.out.println("get呼ばれた");
+	}
+	
+	@FXML
+	protected void updateAction(ActionEvent event) {
+		System.out.println("updateValue呼ばれた");
+	}
+	
+	@FXML
+	protected void expireAction(ActionEvent event) {
+		System.out.println("expireValue呼ばれた");
+	}
+	
+	@FXML
+	protected void deleteAction(ActionEvent event) {
+		System.out.println("deleteValue");
 	}
 }
