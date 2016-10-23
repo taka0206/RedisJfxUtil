@@ -29,12 +29,24 @@
             <Label text="キー" GridPane.rowIndex="2" />
             <Label text="ハッシュフィールド" GridPane.rowIndex="3" />
             <Label text="値" GridPane.rowIndex="4" />
-            <TextField id="uri" fx:id="redisUri" GridPane.columnIndex="1" />
             <TextField id="key" fx:id="key" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <TextField id="hashKey" fx:id="hashField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <TextField id="hashValue" fx:id="hashValue" GridPane.columnIndex="1" GridPane.rowIndex="4" />
             <Label text="認証" GridPane.rowIndex="1" />
             <TextField id="auth" fx:id="auth" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <GridPane GridPane.columnIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="redisUri" />
+                  <TextField fx:id="redisPort" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
          </children>
          <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
